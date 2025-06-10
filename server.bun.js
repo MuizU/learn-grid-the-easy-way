@@ -14,8 +14,8 @@ let sseClients = new Set();
 // We can extend this later to watch CSS files too.
 const filesToWatch = [HTML_FILE_PATH]; // Start with index.html
 // You can add your CSS files here if you want them to trigger a reload:
-// filesToWatch.push(path.join(PUBLIC_DIR, "style.css"));
-// filesToWatch.push(path.join(PUBLIC_DIR, "style2.css"));
+filesToWatch.push(path.join(PUBLIC_DIR, "style.css"));
+filesToWatch.push(path.join(PUBLIC_DIR, "style-start.css"));
 
 for (const filePathToWatch of filesToWatch) {
   try {
